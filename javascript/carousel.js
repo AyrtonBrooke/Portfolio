@@ -1,37 +1,4 @@
-// /js/carousel.js
-let slideIndex = 1;
-
-function showSlides(n) {
-    var slides = document.getElementsByClassName("projects-content");
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-    for (var i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "block";
-}
-
-function changeSlide(n) {
-    showSlides(slideIndex += n);
-}
-
-document.querySelectorAll('.projects-content .next, .projects-content .prev').forEach((button) => {
-    button.addEventListener('click', () => {
-        const activeSlide = document.querySelector('.projects-content.active');
-        const activeSlideIndex = Array.from(activeSlide.parentNode.children).indexOf(activeSlide);
-        let nextSlideIndex;
-        if (button.classList.contains('next')) {
-            nextSlideIndex = activeSlideIndex + 1;
-        } else {
-            nextSlideIndex = activeSlideIndex - 1;
-        }
-        showSlide(nextSlideIndex);
-    });
-});
+let slideIndex = 0; // Start with the first slide
 
 function showSlide(index) {
     const slides = document.querySelectorAll('.projects-content');
@@ -44,7 +11,21 @@ function showSlide(index) {
         slide.classList.remove('active');
     });
     slides[index].classList.add('active');
+    slideIndex = index; // Update the global slide index
 }
 
+// Attach event listeners to the slide buttons
+document.querySelectorAll('.next, .prev').forEach((button) => {
+    button.addEventListener('click', () => {
+        let nextSlideIndex;
+        if (button.classList.contains('next')) {
+            nextSlideIndex = slideIndex + 1;
+        } else {
+            nextSlideIndex = slideIndex - 1;
+        }
+        showSlide(nextSlideIndex);
+    });
+});
+
 // Initialize the first slide
-showSlide(0);
+showSlide(slideIndex);

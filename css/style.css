@@ -462,6 +462,33 @@ button:hover{
 }
 
 /* Projects */
+
+/* Slider container */
+.projects-slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Slider content */
+.projects-content {
+    display: none; /* Hide all slides initially */
+    width: 100%; /* Adjust based on your layout needs */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.projects-content.active {
+    display: block; /* Show only the active slide */
+}
+
+.projects-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure images cover the area */
+}
+
 .projects {
     max-width: 100%;
     padding: 100px 0px;

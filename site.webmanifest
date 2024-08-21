@@ -2,7 +2,7 @@
     "name":"Portfolio",
     "short_name":"Portfolio",
     "description": "My Portfolio",
-    "start_url": "https://ayrton-portfolio.web.app/",
+    "start_url": "https://ayrtonbrooke.github.io/Portfolio/",
     "display": "standalone",
     "background_color": "#191919",
     "theme_color": "#5a2366",
