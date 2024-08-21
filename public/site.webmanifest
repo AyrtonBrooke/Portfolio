@@ -1,0 +1,22 @@
+{
+    "name":"Portfolio",
+    "short_name":"Portfolio",
+    "description": "My Portfolio",
+    "start_url": "https://ayrton-portfolio.web.app/",
+    "display": "standalone",
+    "background_color": "#191919",
+    "theme_color": "#5a2366",
+    "icons" : [
+        {"src":"images/android-chrome-512x512.png",
+        "sizes":"192x192",
+        "type":"image/png",
+        "purpose": "maskable"
+    },
+    {
+        "src":"images/android-chrome-512x512.png",
+        "sizes":"512x512",
+        "type":"image/png",
+        "purpose": "maskable"
+    }
+    ]
+}

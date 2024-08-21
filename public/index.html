@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#5a2366" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="images/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="images/png" sizes="16x16" href="images/favicon-16x16.png">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="manifest" href="site.webmanifest">
+    <title>Ayrton Brooke - Portfolio</title>
+</head>
+<body>
+    <a href="#home" class="scroll-top">
+        <i class='bx bxs-chevrons-up'></i>
+    </a>
+    <header>
+        <nav class="navbar">
+            <div class="navbar_container">
+                <a href="#home" id="navbar_logo">Ayrton Brooke</a>
+                <div class="navbar_toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar_menu">
+                    <li class="navbar_item">
+                        <a href="#home" class="navbar_links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#about" class="navbar_links" id="about-page">About</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#education" class="navbar_links" id="education-page">Education</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#skills" class="navbar_links" id="skills-page">Skills</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#projects" class="navbar_links" id="projects-page">Projects</a>
+                    </li>
+                    <li class="navbar_item">
+                        <a href="#contact" class="navbar_links" id="contact-page">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--Hero Section-->
+    <section class="home" id="home">
+            <div class="hero_container">
+                <video autoplay loop muted plays-inline class="back-video">
+                    <source src="images/Computer - 36503.mp4" type="video/mp4">
+                </video>
+                <div class="content">
+                    <h1 class="hero_heading">Ayrton Brooke</h1>
+                    <h2 class="hero_description">Creative Programmer</h2>
+                    <a href="#about" style="--clr:#FF00FF"><span>Who Am I?</span><i></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <!--About Section-->
+    <section class="about" id="about">
+        <div class="main">
+            <img src="images/Website Photo Of Me.webp" alt="picture of me" width="400" height="600">
+            <div class="main_content">
+                <h1 class="about_heading">ALL ABOUT <span>ME!</span></h1>
+                <h2 id="joke"></h2>
+                <p>I'm a third year computer science student aspiring to become a developer of many creations. Located in London hoping for multiple opportunities. My passion lies in programming and seeing my code come to life. 
+                    <br><br>
+                    I'm a determined problem solver.
+                    <br><br>
+                    Searching ... for experiences to fulfil my life, through the means of travel, job opportunities and my own projects.
+                </p>
+                <a href="#contact"><button type="button">Message Me!</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!--Education-->
+    <section class="education" id="education">
+        <div class="main_education" >
+            <img src="images/StaffsUniLogo.webp" alt="Logo of my uni - Staffs Uni London" width="400" height="600">
+            <div class="education_content">
+                <h1 class="education_heading">EDUCATION!</h1>
+                <h2 class="education_subheading">Current BSC computer science student - Staffordshire University London</h2>
+                <ul>
+                    <li>Networking Concepts And Cyber Security</li>
+                    <li>Software Development And Application Modelling</li>
+                    <li>Web Development And Operating Systems</li>
+                    <li>Digital Technologies</li>
+                    <li>Commercial Computing</li>
+                    <li>Databases And Data Structures</li>
+                    <li>Multiple Devices And User Experiences</li>
+                    <li>Enterprise Cloud And Distributed Web Applications</li>
+                    <li>Web And Artificial Intelligence</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!--Skills Section-->
+    <section class="skills" id="skills">
+        <div class="main_skills" >
+            <h1 class="skills_heading">SKILLS!</h1>
+            <div class="skills_content">
+                <h2>SKILLS I WANT TO DEVELOP MORE!</h2>
+                <div class="skills-developed">
+                    <i title="HTML5" class='bx bxl-html5'></i>
+                    <i title="CSS3" class='bx bxl-css3'></i>                    
+                    <i title="Bootstrap" class="bx devicon-bootstrap-plain"></i>      
+                    <i title="JavaScript" class='bx bxl-javascript'></i>
+                    <i title="Unity" class='bx bxl-unity'></i>
+                    <i title="Python" class='bx bxl-python'></i>
+                    <i title="Mysql" class="bx devicon-mysql-plain"></i>
+                    <i title="Laravel" class="bx devicon-laravel-plain-wordmark"></i>
+                    <i title="Git" class="bx devicon-git-plain"></i>
+                </div><br><br>
+                <h2>SKILLS I AM INTERESTED IN LEARNING!</h2>
+                <div class="skills-wanted">
+                    <i title="C#" class="bx devicon-csharp-plain"></i>
+                    <i title="Node.JS" class="bx devicon-nodejs-plain"></i>
+                    <i title="Java" class="bx devicon-java-plain-wordmark"></i>
+                    <i title="PHP" class="bx devicon-php-plain"></i>
+                    <i title="React" class="bx devicon-react-original"></i>
+                    <i title="AWS" class="bx devicon-amazonwebservices-original"></i>
+                    <i title="Blender" class="bx devicon-blender-original"></i>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <!--Projects Section-->
+    <section class="projects" id="projects">
+        <h1 class="projects_heading"><span>PRO</span>JECTS!</h1>
+        <div class="main_projects">
+            <div class="projects-content active">
+                    <img src="images/pizzas.png" alt="Project 1">
+                <div class="text-content">
+                    <h2>Pizza Application</h2>
+                        <div class="made-container">
+                            <h3>made with: 
+                                <i class="devicon-php-plain colored"></i>
+                                <i class="devicon-laravel-plain-wordmark colored"></i>
+                                <i class="bx devicon-mysql-plain colored"></i>
+                            </h3>
+                        </div>
+                        <p> I developed a pizza ordering app, honing my server-side programming skills.
+                             Using Laravel's framework, I seamlessly integrated a MySQL database, managing user info and order history. 
+                             Users can easily order pizzas with size options, and exclusive deals update prices dynamically.
+                             This project enhanced my understanding of backend-frontend interaction and user authentication and security practises.
+                        </p>
+                        <div class="button-container">
+                            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                            <button type="button"><a href="https://github.com/AyrtonBrooke/PizzaApp"><i class='bx bxl-github'> Code</button></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-content">
+                    <img src="images/PizzaApi.png" alt="Project 2">
+                <div class="text-content">
+                    <h2>Pizza Rest API</h2>
+                    <div class="made-container">
+                        <h3>made with: 
+                            <i class="devicon-java-plain-wordmark colored"></i>
+                            <i class="bx devicon-mysql-plain colored"></i>
+                        </h3>
+                    </div>
+                    <p>I built a REST API with JWT token-based authentication for admins to securely perform CRUD operations.
+                        This API connects to a MySQL database to retrieve pizza information, enabling admins to add, view, and delete pizzas effortlessly. 
+                        Through this project, I enhanced my skills in backend development, particularly in building RESTful APIs and implementing advanced authentication mechanisms.
+                    </p>
+                    <div class="button-container">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                        <button type="button"><a href="https://github.com/AyrtonBrooke/PizzaRestApi"><i class='bx bxl-github'> Code</i></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-content">
+                    <img src="images/All4U.png" alt="Project 3">
+                <div class="text-content">
+                    <h2>All4U - Self Improvement App</h2>
+                    <div class="made-container">
+                        <h3>made with: 
+                            <i class="devicon-flutter-plain colored"></i>
+                        </h3>
+                    </div>
+                    <p>In my Flutter app with Firebase authentication, users can make to-do lists and journal entries,
+                        utilizing local storage, ensuring seamless data access.
+                        I created an intuitive interface with cards for healthier living tips.
+                        This project sharpened my mobile app development skills while deepening my understanding of UI/UX design.
+                    </p>
+                    <div class="button-container">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                        <button type="button"><a href="https://github.com/AyrtonBrooke/ALL4U"><i class='bx bxl-github'> Code</i></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-content">
+                    <img src="images/VanDelivery.png" alt="Project 4">
+                <div class="text-content">
+                    <h2>Van Delivery Algorithm</h2>
+                    <div class="made-container">
+                        <h3>made with: 
+                            <i class="devicon-python-plain-wordmark colored"></i>
+                        </h3>
+                    </div>
+                    <p>This project optimizes van delivery routes using Euclidean distance calculations. 
+                        It takes delivery schedules as input and efficiently organizes deliveries to minimize travel distance and time. 
+                        The program generates detailed reports summarizing start and end times, total distance traveled, and total time spent for each day. 
+                        This project showcases my Python programming skills and problem-solving abilities in logistics and transportation management.
+                    </p>
+                    <div class="button-container">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                        <button type="button"><a href="https://github.com/AyrtonBrooke/VanDelivery"><i class='bx bxl-github'> Code</i></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-content">
+                <img src="images/article.png" alt="Project 5">
+                <div class="text-content">
+                    <h2>Article website</h2>
+                    <div class="made-container">
+                        <h3>made with: 
+                            <i class="devicon-html5-plain-wordmark colored"></i>
+                            <i class="devicon-css3-plain-wordmark colored"></i>
+                        </h3>
+                    </div>
+                    <p>In my latest project, I recreated my partner's Wix design using HTML and CSS. 
+                        By faithfully following their specifications, I crafted a pixel-perfect replica of their website design, showcasing my attention to detail and web development skills. 
+                        This collaborative effort not only honed my abilities in design implementation but also strengthened my skills in creative collaboration.
+                    </p>
+                    <div class="button-container">
+                        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+                        <button type="button"><a href="https://github.com/AyrtonBrooke/Article"><i class='bx bxl-github'> Code</i></a></button>
+                        <button type="button"><a href="https://ayrtonbrooke.github.io/article/"><i class='bx bx-link-external'> Link</i></a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Contact Section-->
+    <section class="contact" id="contact">
+        <h1 class="contact_heading">CONTACT <span>ME!</span></h1>
+        <div class="main_contact">
+            <div class="social">
+                <a href="https://www.linkedin.com/in/ayrton-brooke-4943031ba/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/AyrtonBrooke"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.youtube.com/channel/UCYAw3keiDh3JouWfpGAd-YQ/featured"><i class='bx bxl-youtube' ></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100085255968024"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="https://twitter.com/ayrtonbrooke01"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.pinterest.co.uk/AyrtonRBrooke/"><i class='bx bxl-pinterest' ></i></a>
+                <a href="https://www.instagram.com/ayrtonrbrooke/"><i class='bx bxl-instagram' ></i></a>
+            </div>
+            <form action="contact" method="post" class="contact-form" id="contact-form">
+                <input type="text" name="name" id="name" placeholder="Your Name..." class="name" required>
+                <input type="email" name="email" id="email" placeholder="Email Address..." class="email" required>
+                <input type="tel" name="phone" id="phone" placeholder="Phone No." class="phone" required>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Write Message Here..." class="message" required></textarea>
+                <input type="submit" value="Send" class="submit-btn">
+            </form>
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <section class="footer" id="footer">
+        <div class="footer-links">
+            <p>&#169; 2024 Ayrton Brooke All Rights Reserved</p>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <script src="mail.js"></script>
+    <script src="app.js"></script>
+    <script src="api.js"></script>
+    <script>
+        var slideIndex = 1;
+    
+        showSlides(slideIndex);
+    
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function showSlides(n) {
+            var slides = document.getElementsByClassName("projects-content");
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
+        }
+
+// Get the total number of slides
+const totalSlides = document.querySelectorAll('.projects-content').length;
+
+// Get all the slide buttons
+const slideButtons = document.querySelectorAll('.projects-content .next, .projects-content .prev');
+
+// Attach click event listeners to the slide buttons
+slideButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    // Get the current active slide index
+    const activeSlide = document.querySelector('.projects-content.active');
+    const activeSlideIndex = Array.from(activeSlide.parentNode.children).indexOf(activeSlide);
+  
+    // Calculate the index of the next slide
+    let nextSlideIndex;
+    if (button.classList.contains('next')) {
+      nextSlideIndex = activeSlideIndex + 1;
+    } else {
+      nextSlideIndex = activeSlideIndex - 1;
+    }
+  
+    // Show the next slide
+    showSlide(nextSlideIndex);
+  });
+});
+
+// Show the slide at the specified index
+function showSlide(index) {
+  const slides = document.querySelectorAll('.projects-content');
+  
+  // Wrap around the index if it goes out of range
+  if (index < 0) {
+    index = slides.length - 1;
+  } else if (index >= slides.length) {
+    index = 0;
+  }
+  
+  // Remove the active class from all slides
+  slides.forEach((slide) => {
+    slide.classList.remove('active');
+  });
+  
+  // Add the active class to the specified slide
+  slides[index].classList.add('active');
+}
+
+// Show the first slide initially
+showSlide(0);
+
+
+    </script>
+        
+</body>
+</html>
