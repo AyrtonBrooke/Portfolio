@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#5a2366" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -283,84 +283,13 @@
             <p>&#169; 2024 Ayrton Brooke All Rights Reserved</p>
         </div>
     </section>
-    <script src="main.js"></script>
-    <script src="mail.js"></script>
-    <script src="app.js"></script>
-    <script src="api.js"></script>
-    <script>
-        var slideIndex = 1;
     
-        showSlides(slideIndex);
-    
-        function changeSlide(n) {
-            showSlides(slideIndex += n);
-        }
-    
-        function showSlides(n) {
-            var slides = document.getElementsByClassName("projects-content");
-            if (n > slides.length) {
-                slideIndex = 1;
-            }
-            if (n < 1) {
-                slideIndex = slides.length;
-            }
-            for (var i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex - 1].style.display = "block";
-        }
-
-// Get the total number of slides
-const totalSlides = document.querySelectorAll('.projects-content').length;
-
-// Get all the slide buttons
-const slideButtons = document.querySelectorAll('.projects-content .next, .projects-content .prev');
-
-// Attach click event listeners to the slide buttons
-slideButtons.forEach((button) => {
-  button.addEventListener('click', () => {
-    // Get the current active slide index
-    const activeSlide = document.querySelector('.projects-content.active');
-    const activeSlideIndex = Array.from(activeSlide.parentNode.children).indexOf(activeSlide);
-  
-    // Calculate the index of the next slide
-    let nextSlideIndex;
-    if (button.classList.contains('next')) {
-      nextSlideIndex = activeSlideIndex + 1;
-    } else {
-      nextSlideIndex = activeSlideIndex - 1;
-    }
-  
-    // Show the next slide
-    showSlide(nextSlideIndex);
-  });
-});
-
-// Show the slide at the specified index
-function showSlide(index) {
-  const slides = document.querySelectorAll('.projects-content');
-  
-  // Wrap around the index if it goes out of range
-  if (index < 0) {
-    index = slides.length - 1;
-  } else if (index >= slides.length) {
-    index = 0;
-  }
-  
-  // Remove the active class from all slides
-  slides.forEach((slide) => {
-    slide.classList.remove('active');
-  });
-  
-  // Add the active class to the specified slide
-  slides[index].classList.add('active');
-}
-
-// Show the first slide initially
-showSlide(0);
-
-
-    </script>
-        
+    <script src="/javascript/api.js"></script>
+    <script src="/javascript/app.js"></script>
+    <script src="/javascript/carousel.js"></script>
+    <script src="/javascript/highlightMenu.js"></script>
+    <script src="/javascript/mail.js"></script>
+    <script src="/javascript/mobileMenu.js"></script>
+    <script src="/javascript/scrollToTop.js"></script>
 </body>
 </html>
