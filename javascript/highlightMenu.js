@@ -16,10 +16,10 @@ const highlightMenu = () => {
     } else if (window.innerWidth > 960 && scrollPos < 1400) {
         aboutMenu.classList.add('highlight');
         homeMenu.classList.remove('highlight');
-        educationMenu.classList.remove('highlight');
+        projectsMenu.classList.remove('highlight');
         return;
     } else if (window.innerWidth > 960 && scrollPos < 2345) {
-        educationMenu.classList.add('highlight');
+        projectsMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         skillsMenu.classList.remove('highlight');
         return;
@@ -29,13 +29,13 @@ const highlightMenu = () => {
         projectsMenu.classList.remove('highlight');
         return;
     } else if (window.innerWidth > 960 && scrollPos < 3500) {
-        projectsMenu.classList.add('highlight');
+        educationMenu.classList.add('highlight');
         skillsMenu.classList.remove('highlight');
         contactMenu.classList.remove('highlight');
         return;
     } else if (window.innerWidth > 960 && scrollPos < 4000) {
         contactMenu.classList.add('highlight');
-        projectsMenu.classList.remove('highlight');
+        educationMenu.classList.remove('highlight');
         return;
     }
     if((elem && window.innerWidth <960 && scrollPos < 600) || elem) {
